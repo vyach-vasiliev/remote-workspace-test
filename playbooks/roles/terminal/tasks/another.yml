@@ -6,3 +6,4 @@
   with_items:
     - ncdu
     - htop
+  include_tasks: another.yml
