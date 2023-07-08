@@ -2,11 +2,11 @@
 - hosts: localhost
   roles:
     - role: gantsign.intellij
-    - install_python.yml
-    - bashrc.yml
-    - terminal.yml
-    - git.yml
-    - python.yml
-    - editors.yml
-    - projects.yml
-    - venv.yml
+    - install_python
+    - bashrc
+    - terminal
+    - git
+    - python
+    - editors
+    - projects
+    - venv
