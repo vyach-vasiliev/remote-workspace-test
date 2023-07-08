@@ -1,9 +1,4 @@
 ---
-- name: Add latest Python
-  apt_repository:
-    repo: "ppa:jonathonf/python-{{ python_version }}"
-    state: present
-
 - name: install Python with dev
   apt:
     name: "{{ item }}"
