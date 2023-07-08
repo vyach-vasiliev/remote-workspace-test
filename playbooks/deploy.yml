@@ -3,10 +3,10 @@
   roles:
     - gantsign.intellij
 
-- import_playbook: bashrc
-- import_playbook: terminal
-- import_playbook: git
-- import_playbook: python
-- import_playbook: editors
-- import_playbook: projects
-- import_playbook: venv
+- import_playbook: bashrc.yml
+- import_playbook: terminal.yml
+- import_playbook: git.yml
+- import_playbook: python.yml
+- import_playbook: editors.yml
+- import_playbook: projects.yml
+- import_playbook: venv.yml
