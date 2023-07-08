@@ -2,10 +2,11 @@
 - hosts: localhost
   roles:
     - gantsign.intellij
-    - bashrc
-    - terminal
-    - git
-    - python
-    - editors
-    - projects
-    - venv
+
+- import_playbook: bashrc
+- import_playbook: terminal
+- import_playbook: git
+- import_playbook: python
+- import_playbook: editors
+- import_playbook: projects
+- import_playbook: venv

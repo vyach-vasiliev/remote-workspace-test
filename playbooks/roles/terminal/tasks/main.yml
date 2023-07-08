@@ -5,12 +5,11 @@
 #
 - name: apt terminal packages
   apt:
-    name: "{{ item }}"
+    name:
+      - tmux
+      - tmuxinator
+      - hstr
     state: present
-  with_items:
-    - tmux
-    - tmuxinator
-    - hstr
 
 - name: get hstr config
   shell: hstr --show-configuration
@@ -37,8 +36,9 @@
 
 - name: Another apt packages
   apt:
-    name: "{{ item }}"
+    name:
+      - ncdu
+      - htop
+      - curl
     state: present
-  with_items:
-    - ncdu
-    - htop
+    autoclean: yes
