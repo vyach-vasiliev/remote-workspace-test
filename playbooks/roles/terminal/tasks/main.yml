@@ -34,3 +34,6 @@
 #   dest: '{{ home_path }}/.tmux.conf'
 #   state: link
 #   force: yes
+
+- name: Another tasks
+  include_tasks: another.yml
