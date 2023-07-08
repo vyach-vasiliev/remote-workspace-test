@@ -2,22 +2,12 @@
 - name: install Python with dev
   apt:
     name:
+      - python3-pip
       - "python{{ python_version }}"
       - "python{{ python_version }}-dev"
       - "python{{ python_version }}-venv"
     state: present
 
-- name: install Pip
-  apt:
-    name:
-      - python-pip
-      - python3-pip
-    state: present
-
-- name: install Venv for python3
-  apt:
-    name: "python{{ python_version }}-venv"
-    state: present
 
 #- name: install Venv for python2
 #  pip:
