@@ -3,14 +3,15 @@
 #    repo: "ppa:ultradvorka/ppa"
 #    state: present
 #
-#- name: apt terminal packates
-#  apt:
-#    name: "{{ item }}"
-#    state: present
-#  with_items:
-#    - tmux
-#    - tmuxinator
-#    - hstr
+- name: apt terminal packages
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - tmux
+    - tmuxinator
+    - hstr
+
 - name: get hstr config
   shell: hstr --show-configuration
   register: hstr_config
@@ -22,12 +23,11 @@
     state: present
   with_items: "{{ hstr_config.stdout }}"
 
-#- name: add tmux config
-#  copy:
-#    src: tmux.config
-#    dest: '{{ user_config }}/.tmux.conf'
-#
-#
+- name: add tmux config
+  copy:
+    src: tmux.config
+    dest: '{{ user_config }}/.tmux.conf'
+
 #- name: Create symbolic link
 #  file:
 #   src: '{{ user_config }}/.tmux.conf'
