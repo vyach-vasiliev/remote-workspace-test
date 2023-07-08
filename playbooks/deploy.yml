@@ -7,3 +7,6 @@
 - import_playbook: projects.yml
 - import_playbook: venv.yml
 
+- hosts: servers
+  roles:
+    - role: gantsign.intellij
