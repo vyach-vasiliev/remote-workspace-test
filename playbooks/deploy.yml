@@ -2,6 +2,7 @@
 - hosts: localhost
   roles:
     - gantsign.intellij
+    - alvistack.openjdk
 
 - import_playbook: bashrc.yml
 - import_playbook: terminal.yml
