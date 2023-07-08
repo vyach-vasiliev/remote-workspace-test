@@ -1,4 +1,4 @@
-- name: install pycharm
+- name: install editors
   hosts: localhost
   connection: local
   roles:
