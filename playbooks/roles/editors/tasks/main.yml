@@ -2,6 +2,7 @@
 - name: Install OpenJDK
   roles:
     - alvistack.openjdk
+    - gantsign.intellij
 
 #
 #- name: install pycharm
