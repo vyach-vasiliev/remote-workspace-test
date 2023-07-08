@@ -1,0 +1,19 @@
+---
+- name: Install OpenJDK 11
+  become: true
+  yum:
+    name:
+      - java-11-openjdk-devel
+      - java-11-openjdk-jmods
+      - java-11-openjdk-src
+    state: present
+#
+#- name: install pycharm
+#  snap:
+#    name: pycharm-community
+#    state: present
+
+- name: install vim
+  apt:
+    name: "vim"
+    state: present

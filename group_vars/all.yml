@@ -1,0 +1,8 @@
+username: root
+home_path: "/home/{{ username }}"
+user_config: "{{ home_path }}/.config/{{ username}}_config"
+git_name: wenceslaus
+git_email: contact.vyacheslav@gmail.com
+projects:
+#  - https://github.com/vyach-vasiliev/remote-workspace-test
+

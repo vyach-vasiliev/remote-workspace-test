@@ -1,0 +1,6 @@
+- name: create projects venv
+  hosts: localhost
+  connection: local
+  roles:
+    - venv
+  become: true

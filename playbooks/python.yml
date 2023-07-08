@@ -1,0 +1,6 @@
+- name: install and config python
+  hosts: localhost
+  connection: local
+  roles:
+    - python
+  become: true

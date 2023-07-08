@@ -1,0 +1,5 @@
+all:
+  - hosts: servers
+    roles:
+      - role: gantsign.intellij
+

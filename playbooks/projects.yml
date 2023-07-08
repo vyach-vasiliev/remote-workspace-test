@@ -1,0 +1,6 @@
+- name: pull projects
+  hosts: localhost
+  connection: local
+  roles:
+    - projects
+  become: true

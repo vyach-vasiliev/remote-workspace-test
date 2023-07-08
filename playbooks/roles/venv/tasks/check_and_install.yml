@@ -1,0 +1,20 @@
+---
+#- name: set project dir
+#  set_fact:
+#    project_dir: '{{ home_path }}/projects/{{ item.split("/")[-1] }}'
+#
+#- name: 'name check if req exists in {{ project_dir }}'
+#  stat:
+#    path: '{{ project_dir}}/requirements.txt'
+#  register: req
+#
+#- name: 'create virtual env'
+#  shell: 'sudo python3.6 -m venv {{ project_dir }}/venv'
+#  when: req.stat.exists == True
+#
+#- name: 'install {{ project_dir }}/requirements.txt'
+#  pip:
+#    requirements: '{{ project_dir }}/requirements.txt'
+#    virtualenv: '{{ project_dir }}/venv'
+#  when: req.stat.exists == True
+
