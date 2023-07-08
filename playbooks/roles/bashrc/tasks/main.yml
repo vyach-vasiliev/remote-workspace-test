@@ -33,14 +33,14 @@
     state: present
   when: grep_aliases_user.stdout == ""
 
-- name: check aliases in bashrc root
-  shell: "grep '^source {{ user_config }}/aliases.sh' /root/.bashrc | cat"
-  register: grep_aliases_root
-
-- name: add aliases to bashrc root
-  lineinfile:
-    path: "/root/.bashrc"
-    line: "source {{ user_config }}/aliases.sh"
-    state: present
-  when: grep_aliases_root.stdout == ""
-
+#- name: check aliases in bashrc root
+#  shell: "grep '^source {{ user_config }}/aliases.sh' /root/.bashrc | cat"
+#  register: grep_aliases_root
+#
+#- name: add aliases to bashrc root
+#  lineinfile:
+#    path: "/root/.bashrc"
+#    line: "source {{ user_config }}/aliases.sh"
+#    state: present
+#  when: grep_aliases_root.stdout == ""
+#
