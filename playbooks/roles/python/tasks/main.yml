@@ -1,21 +1,18 @@
 ---
 - name: install Python with dev
   apt:
-    name: "{{ item }}"
-    state: present
-  with_items:
+    name:
       - "python{{ python_version }}"
-      - "python-dev"
       - "python{{ python_version }}-dev"
       - "python{{ python_version }}-venv"
+    state: present
 
 - name: install Pip
   apt:
-    name: "{{ item }}"
-    state: present
-  with_items:
+    name:
       - python-pip
       - python3-pip
+    state: present
 
 - name: install Venv for python3
   apt:
