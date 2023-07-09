@@ -7,6 +7,7 @@
   snap:
     name: intellij-idea-ultimate
     state: present
+    classic: true
 
 #- name: Download JB Toolbox installer
 #  get_url:
