@@ -17,7 +17,7 @@
     - libxtst6
     - libxi6
     - tigervnc-standalone-server
-      tigervnc-common
+    - tigervnc-common
     state: present
 
 #- name: Download JB Toolbox installer
