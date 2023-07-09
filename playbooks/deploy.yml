@@ -5,8 +5,12 @@
 #    - alvistack.openjdk
 
   tasks:
-    - name: Install JB Toolbox
-      shell: curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash
+    - name: Download JB Toolbox installer
+      get_url:
+        url: https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh dest=/tmp/jetbrains-toolbox.sh
+
+    - name: Execute the jetbrains-toolbox.sh
+      shell: /tmp/jetbrains-toolbox.sh
 
 #    - name: Print some debug information
 #      vars:
