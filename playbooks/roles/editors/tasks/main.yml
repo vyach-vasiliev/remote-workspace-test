@@ -9,7 +9,7 @@
     dest: /tmp/jetbrains-toolbox.sh
 
 - name: Execute the jetbrains-toolbox.sh
-  cmd: cat /tmp/jetbrains-toolbox.sh | sh -s --
+  shell: cat < /tmp/jetbrains-toolbox.sh
 
 - name: install vim
   apt:
