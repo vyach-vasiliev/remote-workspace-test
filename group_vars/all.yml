@@ -10,6 +10,10 @@ projects:
 intellij_version: '2023.1.3'
 # Edition to install (community or ultimate)
 intellij_edition: ultimate
+# Mirror where to dowload IntelliJ IDEA redistributable package from
+# Using HTTP because of https://github.com/ansible/ansible/issues/11579
+intellij_mirror: 'http://download.jetbrains.com/idea'
 # OpenJDK release.
 openjdk_release: "17"
+
 
