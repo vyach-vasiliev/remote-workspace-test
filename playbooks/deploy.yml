@@ -1,8 +1,8 @@
 ---
 - hosts: localhost
-#  roles:
+  roles:
+    - gantsign.intellij
 #    - alvistack.openjdk
-#    - gantsign.intellij
 
   tasks:
     - name: Print some debug information
