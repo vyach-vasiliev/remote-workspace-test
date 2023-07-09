@@ -3,16 +3,21 @@
 #    name: pycharm-community
 #    state: present
 
-- name: Download JB Toolbox installer
-  get_url:
-    url: https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh
-    dest: /tmp/jetbrains-toolbox.sh
+- name: install intellij-idea-ultimate
+  snap:
+    name: intellij-idea-ultimate
+    state: present
 
-- name: Execute the jetbrains-toolbox.sh
-  shell: cat < /tmp/jetbrains-toolbox.sh
-
-- name: Add JB Toolbox to PATH
-  shell: export PATH=$PATH:/home/ubuntu/.local/bin
+#- name: Download JB Toolbox installer
+#  get_url:
+#    url: https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh
+#    dest: /tmp/jetbrains-toolbox.sh
+#
+#- name: Execute the jetbrains-toolbox.sh
+#  shell: cat < /tmp/jetbrains-toolbox.sh
+#
+#- name: Add JB Toolbox to PATH
+#  shell: export PATH=$PATH:/home/ubuntu/.local/bin
 
 - name: install vim
   apt:
