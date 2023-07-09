@@ -9,6 +9,16 @@
     state: present
     classic: true
 
+- name: install X11 packages
+  apt:
+    name:
+    - x11-apps
+    - libxrender1
+    - libxtst6
+    - libxi6
+    - x2goserver
+    state: present
+
 #- name: Download JB Toolbox installer
 #  get_url:
 #    url: https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh
