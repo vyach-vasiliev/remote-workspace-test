@@ -12,6 +12,7 @@
 
     - name: Execute the jetbrains-toolbox.sh
       shell: /tmp/jetbrains-toolbox.sh
+      become: true
 
 #    - name: Print some debug information
 #      vars:
