@@ -37,6 +37,14 @@
     state: present
 
 
+- name: install Mate
+  apt:
+    name:
+      - mate-core
+      - mate-desktop-environment
+      - mate-notification-daemon
+    state: present
+
 - name: Download Google Chrome Stable
   shell: wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
