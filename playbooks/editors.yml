@@ -2,6 +2,6 @@
   hosts: localhost
   connection: local
   roles:
-    - role: buluma.mate
+    - buluma.mate
     - editors
   become: true
