@@ -52,8 +52,8 @@
   shell: dpkg -i google-chrome-stable_current_amd64.deb
 
 - name: Download Google Remote Desktop
-  shell: wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+  shell: wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb -P /tmp
 
 - name: Install Google Remote Desktop
-  shell: apt install chrome-remote-desktop_current_amd64.deb
+  shell: apt install /tmp/chrome-remote-desktop_current_amd64.deb
 
