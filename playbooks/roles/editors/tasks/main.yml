@@ -51,9 +51,9 @@
 - name: Install Google Chrome Stable
   shell: dpkg -i google-chrome-stable_current_amd64.deb
 
-- name: Download Google Chrome Stable
+- name: Download Google Remote Desktop
   shell: wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 
-- name: Install Google Chrome Stable
-  shell: dpkg -i chrome-remote-desktop_current_amd64.deb
+- name: Install Google Remote Desktop
+  shell: apt install chrome-remote-desktop_current_amd64.deb
 
