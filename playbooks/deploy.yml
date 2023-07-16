@@ -1,6 +1,7 @@
 ---
 - hosts: localhost
-#  roles:
+  roles:
+    - buluma.mate
 #    - gantsign.intellij
 #    - alvistack.openjdk
 
