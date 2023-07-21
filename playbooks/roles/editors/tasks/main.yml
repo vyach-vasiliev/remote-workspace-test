@@ -45,6 +45,14 @@
       - mate-notification-daemon
     state: present
 
+- name: install libs for Google Chrome
+  apt:
+    name:
+      - libgconf2-4
+      - libnss3-1d
+      - libxss1
+    state: present
+
 - name: Download Google Chrome Stable
   shell: wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
