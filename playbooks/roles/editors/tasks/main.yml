@@ -48,7 +48,7 @@
 - name: install libs for Google Chrome
   apt:
     name:
-      - libgconf2-4
+      - libgconf-2-4
       - libnss3-1d
       - libxss1
     state: present
