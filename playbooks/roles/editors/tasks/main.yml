@@ -1,8 +1,3 @@
-#- name: install pycharm
-#  snap:
-#    name: pycharm-community
-#    state: present
-
 - name: install intellij-idea-ultimate
   snap:
     name: intellij-idea-ultimate
@@ -16,8 +11,6 @@
     - libxrender1
     - libxtst6
     - libxi6
-    - tigervnc-standalone-server
-    - tigervnc-common
     state: present
 
 #- name: Download JB Toolbox installer
@@ -37,33 +30,27 @@
     state: present
 
 
-- name: install Mate
-  apt:
-    name:
-      - mate-core
-      - mate-desktop-environment
-      - mate-notification-daemon
-    state: present
+#- name: install Mate
+#  apt:
+#    name:
+#      - mate-core
+#      - mate-desktop-environment
+#      - mate-notification-daemon
+#    state: present
 
-- name: install libs for Google Chrome
-  apt:
-    name:
-      - libgconf-2-4
-      - libnss3-1d
-      - libxss1
-    state: present
 
-- name: Download Google Chrome Stable
-  shell: wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+#- name: Download Google Chrome Stable
+#  shell: wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+#
+#- name: Install Google Chrome Stable
+#  shell: dpkg -i google-chrome-stable_current_amd64.deb
+  # apt --fix-broken install
 
-- name: Install Google Chrome Stable
-  shell: dpkg -i google-chrome-stable_current_amd64.deb
-
-- name: Download Google Remote Desktop
-  shell: wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb -P /tmp
-
-- name: Install Google Remote Desktop
-  shell: apt install /tmp/chrome-remote-desktop_current_amd64.deb
+#- name: Download Google Remote Desktop
+#  shell: wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb -P /tmp
+#
+#- name: Install Google Remote Desktop
+#  shell: apt install /tmp/chrome-remote-desktop_current_amd64.deb
 
 
 - name: install VNC
