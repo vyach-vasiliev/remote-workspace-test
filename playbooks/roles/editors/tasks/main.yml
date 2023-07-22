@@ -53,8 +53,8 @@
 #  shell: apt install /tmp/chrome-remote-desktop_current_amd64.deb
 
 
-- name: install VNC
-  apt:
-    name:
-      - tightvncserver
-    state: present
+#- name: install VNC
+#  apt:
+#    name:
+#      - tightvncserver
+#    state: present
