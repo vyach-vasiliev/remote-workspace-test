@@ -40,5 +40,7 @@
       - ncdu
       - htop
       - curl
+      - nmap
+      - net-tools
     state: present
     autoclean: yes
